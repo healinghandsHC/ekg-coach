@@ -14,7 +14,9 @@
       "backgroundColor": "#f8fafc"
     },
     "ios": {
-      "supportsTablet": false
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ekgtrainer.app",
+      "buildNumber": "1"
     },
     "android": {},
     "web": {
