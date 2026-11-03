@@ -259,9 +259,9 @@ export const ekgData: EkgRhythm[] = [
       "Fusion beats or capture beats are diagnostic",
     ],
     clinicalSignificance:
-      "Life-threatening arrhythmia originating from the ventricles. Can be monomorphic (uniform QRS) or polymorphic (varying QRS). May degenerate into ventricular fibrillation and cardiac arrest.",
+      "Life-threatening arrhythmia originating from the ventricles. Can be monomorphic (uniform QRS) or polymorphic (varying QRS). May degenerate into ventricular fibrillation and cardiac arrest. Note: PEA (pulseless electrical activity) is not a separate rhythm -- it is any organized rhythm with no pulse, so the strip can look organized or even normal while the patient has no pulse. PEA has no strip of its own, is not shockable, and is treated with CPR, epinephrine 1mg IV every 3-5 min, and finding and fixing the cause (H's and T's).",
     treatment:
-      "Stable with pulse: amiodarone 150mg IV, synchronized cardioversion. Unstable or pulseless: defibrillation per ACLS protocol. Treat underlying cause (ischemia, electrolyte imbalances).",
+      "Stable with pulse: amiodarone 150mg IV, synchronized cardioversion. Pulseless VT looks the same on the strip as VT with a pulse -- the difference is the patient has no pulse, so it is a cardiac arrest rhythm: follow the ACLS pulseless VT/VF arrest algorithm with CPR, defibrillation, epinephrine 1mg IV every 3-5 min, and amiodarone 300mg IV (first dose) then 150mg (second dose), not the stable-VT approach. Treat underlying cause (ischemia, electrolyte imbalances).",
   },
   {
     id: "ventricular-fibrillation",
@@ -299,7 +299,7 @@ export const ekgData: EkgRhythm[] = [
       "Full compensatory pause after the PVC (total cycle is twice normal)",
     ],
     clinicalSignificance:
-      "Very common. Isolated PVCs in a structurally normal heart are usually harmless. Concerning after MI, with cardiomyopathy, or when PVCs are more than 10% of beats. PVCs can trigger VT or VFib.",
+      "Very common. Isolated PVCs in a structurally normal heart are usually harmless. Concerning after MI, with cardiomyopathy, or when PVCs are more than 10% of beats. PVCs can trigger VT or VFib. PVCs also show up in repeating patterns, which are patterns of PVCs, not separate rhythms: bigeminy is every other beat a PVC (normal, PVC, normal, PVC...), trigeminy is every third beat a PVC, and quadrigeminy is every fourth beat a PVC. The PVCs look the same as any other PVC. These patterns are often harmless, but frequent PVCs can mean the heart is irritable or point to low potassium or magnesium, low oxygen, or ischemia, so the cause should be checked.",
     treatment:
       "Isolated PVCs in a normal heart: reassurance and remove triggers. Frequent or symptomatic PVCs: beta-blockers first-line. Consider ablation if PVCs are causing cardiomyopathy.",
   },
